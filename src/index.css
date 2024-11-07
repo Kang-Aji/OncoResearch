@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: 198 100% 24%;
+    --primary-light: 198 100% 32%;
+    --secondary: 187 75% 39%;
+    --accent: 15 81% 43%;
+  }
+}
+
+body {
+  @apply bg-gray-50;
+}
+
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 24rem), 1fr));
+  gap: 1.5rem;
+}
